@@ -1,6 +1,7 @@
 package ru.gb.my_first_crud.service;
 
 
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.gb.my_first_crud.model.User;
 import ru.gb.my_first_crud.repository.UserRepository;
@@ -8,13 +9,9 @@ import ru.gb.my_first_crud.repository.UserRepository;
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class UserService {
-    private final UserRepository userRepository;
-
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-
+    private UserRepository userRepository;
 
     public List<User> findAll() {
         return userRepository.findAll();

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Department</title>
+</head>
+<body>
+<h1 style="color: DarkOrange">Employees</h1>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Salary</th>
+  </tr>
+  <tr th:each="emp: ${employees}" >
+    <td th:text="${emp.name}"></td>
+    <td th:text="${emp.age}"></td>
+    <td th:text="${emp.salary}"></td>
+  </tr>
+</table>
+
+<h2 style="color: Gray">Add an employees</h2>
+<div class="form">
+<form action="/employees" method="post">
+  Name: <input class="text-field" type="text" name="name"><br />
+  Age: <input class="text-field" type="number" step="any" name="age"><br />
+  Salary: <input class="text-field" type="number" step="any" name="salary"><br />
+  <button class="content-btn" type="submit">Add employee</button>
+</form></div>
+</body>
+</html>
