@@ -1,6 +1,4 @@
-package com.library.Library;
-
-import com.library.Library.model.BookLibrary;
+package com.library.Library.model;
 
 
 import java.io.Serializable;

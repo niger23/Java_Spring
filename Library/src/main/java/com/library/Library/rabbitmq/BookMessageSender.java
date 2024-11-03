@@ -1,6 +1,7 @@
-package com.library.Library;
+package com.library.Library.rabbitmq;
 
 import com.library.Library.model.BookLibrary;
+import com.library.Library.model.BookMessage;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

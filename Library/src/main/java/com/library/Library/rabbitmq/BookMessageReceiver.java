@@ -1,5 +1,6 @@
-package com.library.Library;
+package com.library.Library.rabbitmq;
 
+import com.library.Library.model.BookMessage;
 import com.library.Library.repository.BookRepository;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;

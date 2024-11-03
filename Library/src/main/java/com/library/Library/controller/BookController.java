@@ -1,6 +1,6 @@
 package com.library.Library.controller;
 
-import com.library.Library.BookMessageSender;
+import com.library.Library.rabbitmq.BookMessageSender;
 import com.library.Library.model.BookLibrary;
 import com.library.Library.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
